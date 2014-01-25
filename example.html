@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="resources/jquery-1.10.2.min.js"></script>
+<script src="jquery.threestate.js"></script>
+<link rel="stylesheet" type="text/css" href="/threestate.default.css" />
+    
+<script> 
+//<![CDATA[
+   $(window).load(function(){ $(".threeStateSelect").makeThreeStateSelect({});});
+//]]>
+</script>
+    
+</head> 
+
+<body>
+<form ACTION="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi"
+METHOD="POST">
+INDEX1
+    
+    <div class="threeStateSelect" id="testname" data-input-name="q1">ChestPain</div>
+    
+    <div class="threeStateSelect" data-input-name="q2">Normal, unlabored breathing</div>
+    
+    <div class="threeStateSelect" data-input-name="q3">Pregnant</div>
+
+
+    <INPUT TYPE="SUBMIT" VALUE="Send"/>
+</form>
+
+</body>
+</html>

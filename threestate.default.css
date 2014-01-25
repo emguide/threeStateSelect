@@ -1,0 +1,98 @@
+/********************************************************************************
+/   ThreeStateSelect v1.0
+/   Copyright © 2014 David J Kammer
+/   
+/   License:
+/   Creative Commons Attribution-ShareAlike 4.0 International Public License
+/   http://creativecommons.org/licenses/by-sa/4.0/legalcode
+********************************************************************************/
+
+div.threeStateSelect {
+    position:relative;
+    border:0.15em solid #a1a1a1;
+    background:#dddddd;
+    width:20em;
+    height:1.25em;
+    border-radius:25px;
+    text-align:center;
+    cursor: pointer; 
+    margin:5px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+}
+
+/* Used to hold text and catch clicks, and set default background*/
+span.threeStateSelect_left {
+    position:absolute;
+    left:0;
+    width:2em;
+    height:100%;
+    background:#E6ECDA;
+    border-top-left-radius:22px;
+    border-bottom-left-radius:22px;
+    text-align:center;
+}
+
+/* Used to hold text and catch clicks, and set default background*/
+span.threeStateSelect_right {
+    position:absolute;
+    right:0;
+    width: 2em;
+    height:100%;
+    background:#E3C5C0;
+    border-top-right-radius:22px;
+    border-bottom-right-radius:22px;
+    text-align:center;
+}
+
+.threeStateSelect_textField { visibility:hidden; display:none; }
+
+/* Used to catch clicks, but not set background or hold text*/
+span.threeStateSelect_center {
+    position:absolute;
+    height:100%;;
+    left:2em;
+    right:2em;
+}
+/* Used to catch clicks, but not set background or hold text*/
+span.threeStateSelect_centerLeftClickCatcher{
+    position:absolute;
+    width:50%;
+    left:0;
+    height:100%;
+}
+/* Used to catch clicks, but not set background or hold text*/
+span.threeStateSelect_centerRightClickCatcher{
+    position:absolute;
+    right:0;
+    width:50%;
+    height:100%;
+}
+
+/*overrides the background to show selection*/
+div.threeStateSelect_centerReflectSelectedLeft {
+    background:#ACC084;
+}
+/*overrides the background to show selection*/
+div.threeStateSelect_centerReflectSelectedRight {
+    background:#B86F61;
+}
+/*overrides the background to show selection*/
+span.threeStateSelect_leftSelected {
+    background:#ACC084;
+}
+/*overrides the background to show selection*/
+span.threeStateSelect_rightSelected {
+    background:#B86F61;
+}
+/*overrides the background when the other side is selected*/
+span.threeStateSelect_leftNotSelected {
+    background:#CCCCCC;
+}
+/*overrides the background when the other side is selected*/
+span.threeStateSelect_rightNotSelected {
+    background:#CCCCCC;
+}
+
+
