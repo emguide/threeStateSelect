@@ -7,7 +7,7 @@
 /   http://creativecommons.org/licenses/by-sa/4.0/legalcode
 ********************************************************************************/
 
-div.threeStateSelect {
+.threeStateSelect {
     position:relative;
     border:0.15em solid #a1a1a1;
     background:#dddddd;
@@ -20,6 +20,7 @@ div.threeStateSelect {
     -webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;
+    display: inline-block;
 }
 
 /* Used to hold text and catch clicks, and set default background*/
@@ -71,11 +72,11 @@ span.threeStateSelect_centerRightClickCatcher{
 }
 
 /*overrides the background to show selection*/
-div.threeStateSelect_centerReflectSelectedLeft {
+.threeStateSelect_centerReflectSelectedLeft {
     background:#ACC084;
 }
 /*overrides the background to show selection*/
-div.threeStateSelect_centerReflectSelectedRight {
+.threeStateSelect_centerReflectSelectedRight {
     background:#B86F61;
 }
 /*overrides the background to show selection*/
